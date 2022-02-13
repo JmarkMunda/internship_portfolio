@@ -1,0 +1,76 @@
+:root {
+  --primary: #fff;
+  --secondary: rgb(0, 225, 255);
+  --main-background: rgb(75, 75, 75);
+}
+
+.nav-container {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--main-background);
+  padding: 10px;
+  height: 60px;
+  width: 100%;
+}
+.nav-header {
+  font-size: 25px;
+  margin: 20px;
+  padding-left: 20px;
+  color: var(--primary);
+  transition: all 0.2s ease;
+}
+.nav-header:hover {
+  transform: scale(1.5, 1.5);
+  color: var(--secondary);
+  cursor: pointer;
+}
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-right: 20px;
+}
+li {
+  position: relative;
+  list-style: none;
+  margin: 0 15px;
+  padding: 10px;
+  cursor: pointer;
+  transition: color 0.2s ease-in;
+}
+li::before {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: var(--secondary);
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transition: width 0.2s ease-in;
+}
+li::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: var(--secondary);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transition: width 0.2s ease-in;
+}
+li:hover::before,
+li:hover::after,
+li:hover {
+  width: 50%;
+  color: var(--secondary);
+}
+.link {
+  text-decoration: none;
+  color: var(--primary);
+}
