@@ -1,25 +1,21 @@
-import { HashRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Navbar from './Components/Navbar/Navbar';
-import Home from './Pages/Home';
-import MyProfile from './Pages/MyProfile';
-import Skills from './Pages/Skills';
-import Contact from './Pages/Contact';
+import Home from './Components/Home/Home';
+import MyProfile from './Components/MyProfile/MyProfile';
+import Skills from './Components/Skills/Skills';
+import Contact from './Components/Contact/Contact';
 
 function App() {
   return (
-    <HashRouter>
       <div className='main'>
-        <Navbar /> 
-        <Routes>
-          <Route  path='/' element={<Home />} exact />
-          <Route path='/profile' element={<MyProfile />} />
-          <Route path='/skills' element={<Skills />} />
-          <Route path='/contact' element={<Contact />} />
-      </Routes>    
+        <Navbar />
+        <div className='sections'>    
+          <Home />
+          <MyProfile />
+          <Skills />
+          <Contact />
+        </div>
       </div>
-    </HashRouter> 
-    
   );
 }
 

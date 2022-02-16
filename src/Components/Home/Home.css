@@ -1,4 +1,4 @@
-.home-container {
+.home-section {
   display: flex;
   background-color: var(--main-background);
   height: 100vh;
@@ -47,17 +47,30 @@ p {
 span {
   color: var(--secondary);
 }
-.button-hireme {
+.btn-hireme {
   margin: 60px 20px;
   padding: 10px 25px;
   background-color: transparent;
-  border: 2px solid var(--secondary);
+  border: 1px solid var(--secondary);
   color: var(--primary);
   transition: all 0.2s ease;
 }
-.button-hireme:hover {
-  color: #000;
-  background-color: var(--primary);
+.btn-hireme:hover {
+  border: 2px solid var(--primary);
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.btn-resume {
+  margin: 60px 20px;
+  padding: 10px 25px;
+  background-color: rgba(48, 48, 48, 0.623);
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  transition: all 0.2s ease;
+}
+.btn-resume:hover {
+  border: 2px solid var(--secondary);
+  transform: scale(1.2);
   cursor: pointer;
 }
 .left-container {
@@ -78,4 +91,22 @@ span {
   position: absolute;
   top: 10px;
   left: -60px;
+}
+.btn-scroll {
+  background-color: rgb(220, 245, 255);
+  border: 1px solid var(--secondary);
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 99;
+  display: none;
+  box-shadow: 2px 2px 5px 0px rgb(92, 92, 92);
+}
+
+.btn-scroll.visible {
+  display: inline;
 }

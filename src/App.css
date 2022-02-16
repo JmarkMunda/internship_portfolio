@@ -9,5 +9,9 @@
 .main {
   font-family: "Inconsolata", monospace;
   width: 100%;
+  height: auto;
+}
+.sections > * {
+  width: auto;
   height: 100vh;
 }

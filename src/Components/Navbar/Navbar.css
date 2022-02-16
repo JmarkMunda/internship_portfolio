@@ -3,11 +3,13 @@
   --secondary: rgb(0, 225, 255);
   --main-background: rgb(75, 75, 75);
 }
-
 .nav-container {
   position: sticky;
   top: 0;
   z-index: 1;
+}
+.nav-scrolled {
+  background-color: rgb(70, 70, 70);
 }
 nav {
   display: flex;
@@ -19,14 +21,14 @@ nav {
   width: 100%;
 }
 .nav-header {
-  font-size: 25px;
-  margin: 20px;
+  font-size: 20px;
+  margin: 25px;
   padding-left: 20px;
   color: var(--primary);
   transition: all 0.2s ease;
 }
 .nav-header:hover {
-  transform: scale(1.5, 1.5);
+  transform: scale(1.5);
   color: var(--secondary);
   cursor: pointer;
 }
@@ -40,7 +42,7 @@ li {
   position: relative;
   list-style: none;
   margin: 0 15px;
-  padding: 10px;
+  padding: 15px;
   cursor: pointer;
   transition: color 0.2s ease-in;
 }
@@ -70,7 +72,38 @@ li:hover {
   width: 50%;
   color: var(--secondary);
 }
-.link {
+.navData {
   text-decoration: none;
   color: var(--primary);
+}
+.active {
+  text-decoration: none;
+  color: var(--secondary);
+}
+.inactive {
+  text-decoration: none;
+  color: #fff;
+}
+.inactive:target {
+  color: var(--secondary);
+}
+.active::before {
+  content: "";
+  width: 50%;
+  height: 2px;
+  background-color: var(--secondary);
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transition: width 0.2s ease-in;
+}
+.active::after {
+  content: "";
+  width: 50%;
+  height: 2px;
+  background-color: var(--secondary);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transition: width 0.2s ease-in;
 }
