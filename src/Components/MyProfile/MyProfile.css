@@ -3,11 +3,19 @@
 }
 .header-profile {
   text-align: center;
-  padding: 30px 0;
+  padding: 80px 0 25px 0;
 }
+/* Text Container */
 .text-profile {
-  color: var(--main-background);
+  color: rgb(54, 54, 54);
   font-size: 17px;
+}
+.info {
+  color: rgb(131, 131, 131);
+}
+.course {
+  color: rgb(109, 109, 109);
+  font-style: italic;
 }
 .line-bottom {
   width: auto;
@@ -15,6 +23,26 @@
   margin: 15px 0;
   box-shadow: 0px 1px 2px 0px rgb(129, 129, 129);
 }
+/* Tabs Events */
+.tab {
+  font-weight: bold;
+  margin: 20px 0px;
+  padding: 10px 0px 10px 40px;
+  color: rgb(122, 122, 122);
+  font-size: 17px;
+}
+.tab:hover {
+  cursor: pointer;
+}
+.tab-active {
+  background-color: var(--main-background);
+  color: var(--primary);
+}
+.tab-content-inactive {
+  display: none;
+}
+
+/* Containers */
 .personal-details {
   display: flex;
   justify-content: center;
@@ -22,9 +50,9 @@
 }
 .mp-right-container {
   line-height: 32px;
-  padding: 40px;
+  padding: 40px 0;
   height: 450px;
-  width: auto;
+  width: 300px;
   background-color: rgb(189, 189, 189);
 }
 .mp-left-container {

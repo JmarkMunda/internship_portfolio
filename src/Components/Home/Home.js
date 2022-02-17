@@ -9,7 +9,7 @@ function Home() {
   window.addEventListener("scroll", function(){
     const scrollBtn = document.querySelector(".btn-scroll");
     scrollBtn.classList.toggle("visible", window.scrollY > 400);
-    console.log(window.scrollY);
+    // console.log(window.scrollY);
   });
 
   const scrollToTop = () =>{
