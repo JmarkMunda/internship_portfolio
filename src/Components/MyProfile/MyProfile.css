@@ -1,9 +1,58 @@
 .myprofile-section {
-  background-color: rgb(221, 221, 221);
+  background-color: var(--main-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 200vh;
 }
-.header-profile {
-  text-align: center;
-  padding: 80px 0 25px 0;
+/* About Me */
+.about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px;
+  background-color: var(--main-background);
+  margin-bottom: 40px;
+  height: 500px;
+  width: 100%;
+}
+.about-me:hover .my-pic-container {
+  background-color: transparent;
+  padding: 40px;
+}
+.about-me:hover .text-about-me {
+  border: 1px solid var(--secondary);
+}
+.my-pic-container {
+  background-color: rgba(255, 255, 255, 0.158);
+  border-radius: 50%;
+  padding: 5px;
+  margin: 20px;
+  transition: all 0.4s ease-out;
+}
+/* .my-pic-container:hover {
+  border: 2px solid var(--secondary);
+  background-color: transparent;
+  padding: 20px;
+  transform: scale(1em);
+} */
+.my-pic-container .my-pic {
+  width: 300px;
+  height: 300px;
+  transform: scaleX(-1);
+  z-index: 1;
+  border-radius: 50%;
+}
+.text-about-me {
+  padding: 40px;
+  border: 1px solid var(--primary);
+  width: 600px;
+  color: #fff;
+  font-size: 17px;
+  margin: 40px;
+  transition: all 0.4s ease-out;
 }
 /* Text Container */
 .text-profile {
@@ -11,10 +60,10 @@
   font-size: 17px;
 }
 .info {
-  color: rgb(131, 131, 131);
+  color: rgb(78, 78, 78);
 }
 .course {
-  color: rgb(109, 109, 109);
+  color: rgb(56, 56, 56);
   font-style: italic;
 }
 .line-bottom {
@@ -28,15 +77,16 @@
   font-weight: bold;
   margin: 20px 0px;
   padding: 10px 0px 10px 40px;
-  color: rgb(122, 122, 122);
+  color: rgb(202, 202, 202);
   font-size: 17px;
-}
-.tab:hover {
   cursor: pointer;
 }
+.tab-inactive:hover {
+  color: rgba(255, 255, 255, 0.829);
+}
 .tab-active {
-  background-color: var(--main-background);
-  color: var(--primary);
+  background-color: var(--primary);
+  color: var(--main-background);
 }
 .tab-content-inactive {
   display: none;
@@ -44,25 +94,32 @@
 
 /* Containers */
 .personal-details {
+  margin: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: calc(300px + 600px);
+  box-shadow: 2px 2px 5px 2px rgb(63, 63, 63);
 }
-.mp-right-container {
+.mp-left-container {
   line-height: 32px;
   padding: 40px 0;
   height: 450px;
   width: 300px;
-  background-color: rgb(189, 189, 189);
+  background-color: rgba(150, 150, 150, 0.158);
 }
-.mp-left-container {
+.mp-right-container {
   overflow-y: auto;
   line-height: 32px;
-  padding: 40px;
+  padding: 50px;
   height: 450px;
-  width: auto;
-  background-color: rgba(189, 189, 189, 0.507);
+  width: 600px;
+  background-color: rgb(231, 231, 231);
 }
-.mp-left-container::-webkit-scrollbar {
-  display: none;
+.mp-right-container::-webkit-scrollbar {
+  width: 3px;
+  background-color: var(--primary);
+}
+.mp-right-container::-webkit-scrollbar-thumb {
+  background-color: var(--secondary);
 }

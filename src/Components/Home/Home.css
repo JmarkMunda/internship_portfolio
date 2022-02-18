@@ -48,30 +48,45 @@ span {
   color: var(--secondary);
 }
 .btn-hireme {
+  position: relative;
   margin: 60px 20px;
-  padding: 10px 25px;
+  padding: 12px 25px;
   background-color: transparent;
   border: 1px solid var(--secondary);
   color: var(--primary);
+  z-index: 1;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+.btn-hireme::after {
+  content: "";
+  position: absolute;
+  top: 105%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: var(--secondary);
   transition: all 0.2s ease;
 }
 .btn-hireme:hover {
-  border: 2px solid var(--primary);
-  transform: scale(1.2);
-  cursor: pointer;
+  color: var(--main-background);
+}
+.btn-hireme:hover::after {
+  top: 0;
 }
 .btn-resume {
   margin: 60px 20px;
-  padding: 10px 25px;
+  padding: 12px 25px;
   background-color: rgba(48, 48, 48, 0.623);
   color: var(--primary);
   border: 1px solid var(--primary);
   transition: all 0.2s ease;
+  cursor: pointer;
 }
 .btn-resume:hover {
-  border: 2px solid var(--secondary);
-  transform: scale(1.2);
-  cursor: pointer;
+  border: 1px solid var(--secondary);
 }
 .left-container {
   margin-top: 30px;
@@ -83,7 +98,7 @@ span {
   width: 30vw;
   height: 100vh;
 }
-.right-container .my-pic {
+/* .right-container .my-pic {
   margin: 30px;
   mix-blend-mode: lighten;
   width: 500px;
@@ -91,10 +106,10 @@ span {
   position: absolute;
   top: 10px;
   left: -60px;
-}
+} */
 .btn-scroll {
-  background-color: rgb(220, 245, 255);
-  border: 1px solid var(--secondary);
+  background-color: rgba(211, 211, 211, 0.8);
+  border: none;
   position: fixed;
   right: 30px;
   bottom: 30px;
@@ -104,9 +119,25 @@ span {
   cursor: pointer;
   z-index: 99;
   display: none;
-  box-shadow: 2px 2px 5px 0px rgb(92, 92, 92);
+  box-shadow: 2px 4px 5px 1px rgb(63, 63, 63);
 }
-
 .btn-scroll.visible {
   display: inline;
+}
+.btn-scroll:hover {
+  animation: bounce 1.5s ease-in-out;
+}
+@keyframes bounce {
+  0%,
+  20%,
+  60%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  80% {
+    transform: translateY(-20px);
+  }
 }

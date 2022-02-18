@@ -34,7 +34,7 @@ function Home() {
           </a>
         </div> 
         <div className='right-container'>
-          <img className='my-pic' src={MyPic} />
+          {/* <img className='my-pic' src={MyPic} /> */}
         </div>
       </div>
         <button className='btn-scroll' onClick={scrollToTop}>🡡</button>

@@ -1,5 +1,9 @@
+
+import '@fortawesome/free-regular-svg-icons';
 import React, { useState } from 'react';
 import './MyProfile.css';
+import MyPic from '../../assets/jm.png';
+
 
 function MyProfile() {
 
@@ -11,15 +15,20 @@ function MyProfile() {
 
   return (
     <div className='myprofile-section' id='myprofile'>
-      <h1 className='header-profile'>My Profile</h1>
-      <div className='personal-details' >
-        <div className='mp-right-container'>
-          <p className={'tab ' + (currentTab === 1 ? 'tab-active' : '')} onClick={() => tabHandler(1)} >Personal Information</p>
-          <p className={'tab ' + (currentTab === 2 ? 'tab-active' : '')} onClick={() => tabHandler(2)} >Educational Background</p>
-          <p className={'tab ' + (currentTab === 3 ? 'tab-active' : '')} onClick={() => tabHandler(3)} >Honors and Certificates</p>
-          <p className={'tab ' + (currentTab === 4 ? 'tab-active' : '')} onClick={() => tabHandler(4)} >Class Schedule</p>
+      <div className='about-me'>
+        <div className='my-pic-container'>
+          <img className='my-pic' src={MyPic} />
         </div>
+        <p className='text-about-me'>"I've been dreaming of becoming a full stack web developer ever since but I know for sure that it takes a lot of effort, time and experinces to reach that. <br />I have basic knowledge about HTML, CSS, Javascript and React. Having mentors that will teach me everything and help me improve my skills. That's more than enough..."</p>
+      </div>
+      <div className='personal-details' >
         <div className='mp-left-container'>
+          <p className={'tab ' + (currentTab === 1 ? 'tab-active' : 'tab-inactive')} onClick={() => tabHandler(1)} >Personal Information</p>
+          <p className={'tab ' + (currentTab === 2 ? 'tab-active' : 'tab-inactive')} onClick={() => tabHandler(2)} >Educational Background</p>
+          <p className={'tab ' + (currentTab === 3 ? 'tab-active' : 'tab-inactive')} onClick={() => tabHandler(3)} >Honors and Certificates</p>
+          <p className={'tab ' + (currentTab === 4 ? 'tab-active' : 'tab-inactive')} onClick={() => tabHandler(4)} >Class Schedule</p>
+        </div>
+        <div className='mp-right-container'>
           {/* Personal Information */}
             <div className={'personal-information ' + (currentTab != 1 ? 'tab-content-inactive' : '')}>
             <p className='text-profile'>Name:</p>
@@ -61,6 +70,13 @@ function MyProfile() {
             <p className='text-profile'>Elementary:</p>
             <p className='text-profile info'>Kapitbahayan Elementary School (2004-2010)</p>
             <div className='line-bottom'/>
+          </div>
+
+          {/* Honors and Certificates */}
+          <div className={'honors-certs ' + (currentTab != 3 ? 'tab-content-inactive' : '')}>
+              <p className='text-profile'>Elementary:</p>
+              <p className='text-profile info'>Kapitbahayan Elementary School (2004-2010)</p>
+              <div className='line-bottom'/>
           </div>
         </div>
       </div>
