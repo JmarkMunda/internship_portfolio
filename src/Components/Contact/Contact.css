@@ -1,0 +1,27 @@
+.contact-section {
+  background-color: var(--main-background);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  padding: 0 80px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-content {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+}
+.contact-info {
+  width: 50vw;
+}
+/* Hover effects */
+.contact-section:hover .sections-main-header {
+  color: #fff;
+}
+.contact-section:hover .header-line {
+  background-color: rgb(192, 192, 192);
+}

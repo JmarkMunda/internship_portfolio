@@ -1,0 +1,77 @@
+/* Containers */
+.slider-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 700px;
+  margin: 40px 0;
+}
+.knowledge-sub-container {
+  position: relative;
+  display: none;
+  height: 200px;
+  padding: 40px;
+  width: 700px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255);
+  box-shadow: 2px 2px 5px 1px rgb(44, 44, 44);
+}
+.knowledge-sub-container > p {
+  color: #000;
+}
+
+/* Texts */
+.slider-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+/* Arrows */
+.slide-left,
+.slide-right {
+  user-select: none;
+  color: rgba(68, 68, 68, 0.61);
+  width: 25px;
+  height: 25px;
+  margin: 0 20px 10px 0;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.2s ease-in-out;
+}
+.slide-left {
+  position: absolute;
+  bottom: 0;
+  right: 25px;
+}
+.slide-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.slide-left:hover,
+.slide-right:hover {
+  color: rgb(24, 24, 24);
+  transform: scale(1.2);
+}
+
+/* Active Slide */
+.knowledge-sub-container.active-slide {
+  display: inline;
+  background-color: rgba(255, 255, 255);
+}
+
+/* Animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

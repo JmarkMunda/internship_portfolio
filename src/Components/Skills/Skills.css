@@ -1,0 +1,194 @@
+.skills-section {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--main-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.skills-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: space-evenly;
+  align-content: center;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-row-gap: 40px;
+}
+.html-container {
+  padding: 20px;
+}
+.css-container {
+  padding: 20px;
+}
+.js-container {
+  padding: 20px;
+}
+.react-container {
+  padding: 20px;
+}
+/* Icons */
+.skills-icon {
+  width: 40px;
+  height: 40px;
+  color: #fff;
+}
+/* Header */
+.skills-header {
+  color: white;
+  font-size: 20px;
+}
+/* Level */
+.skills-level {
+  background-color: #fff;
+  width: 400px;
+  height: 20px;
+  margin: 20px 0;
+  border: 1px solid #fff;
+}
+.html-fill-level,
+.css-fill-level,
+.js-fill-level,
+.react-fill-level {
+  background-color: var(--secondary);
+}
+.html-fill-level {
+  width: 95%;
+  height: 100%;
+  position: relative;
+}
+.css-fill-level {
+  width: 80%;
+  height: 100%;
+  position: relative;
+}
+.js-fill-level {
+  width: 40%;
+  height: 100%;
+  position: relative;
+}
+.react-fill-level {
+  width: 40%;
+  height: 100%;
+  position: relative;
+}
+
+/* Pointer and Percentage */
+.html-skill-pointer {
+  position: absolute;
+  right: -10px;
+  bottom: -25px;
+  color: var(--secondary);
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  transition: all 0.2s ease-in;
+}
+.html-skill-percentage {
+  position: absolute;
+  right: -15px;
+  top: 0;
+  opacity: 0;
+  color: var(--secondary);
+  font-size: 12px;
+  transition: all 0.2s ease-in-out;
+}
+.css-skill-pointer {
+  position: absolute;
+  right: -10px;
+  bottom: -25px;
+  opacity: 0;
+  color: var(--secondary);
+  width: 20px;
+  height: 20px;
+  transition: all 0.2s ease-in;
+}
+.css-skill-percentage {
+  position: absolute;
+  right: -15px;
+  top: 0;
+  opacity: 0;
+  color: var(--secondary);
+  font-size: 12px;
+  transition: all 0.2s ease-in-out;
+}
+.js-skill-pointer {
+  position: absolute;
+  right: -10px;
+  bottom: -25px;
+  opacity: 0;
+  color: var(--secondary);
+  width: 20px;
+  height: 20px;
+  transition: all 0.2s ease-in;
+}
+.js-skill-percentage {
+  position: absolute;
+  right: -15px;
+  top: 0;
+  opacity: 0;
+  color: var(--secondary);
+  font-size: 12px;
+  transition: all 0.2s ease-in-out;
+}
+.react-skill-pointer {
+  position: absolute;
+  right: -10px;
+  bottom: -25px;
+  opacity: 0;
+  color: var(--secondary);
+  width: 20px;
+  height: 20px;
+  transition: all 0.2s ease-in;
+}
+.react-skill-percentage {
+  position: absolute;
+  right: -15px;
+  top: 0;
+  opacity: 0;
+  color: var(--secondary);
+  font-size: 12px;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Hover Effects */
+.skills-section:hover .header-line {
+  background-color: rgb(192, 192, 192);
+}
+.skills-section:hover .sections-main-header {
+  color: #fff;
+}
+.skills-level:hover .html-skill-pointer {
+  opacity: 1;
+}
+.skills-level:hover .html-skill-percentage {
+  right: -15px;
+  top: -30px;
+  opacity: 1;
+}
+.skills-level:hover .css-skill-pointer {
+  opacity: 1;
+}
+.skills-level:hover .css-skill-percentage {
+  right: -15px;
+  top: -30px;
+  opacity: 1;
+}
+.skills-level:hover .js-skill-pointer {
+  opacity: 1;
+}
+.skills-level:hover .js-skill-percentage {
+  right: -15px;
+  top: -30px;
+  opacity: 1;
+}
+.skills-level:hover .react-skill-pointer {
+  opacity: 1;
+}
+.skills-level:hover .react-skill-percentage {
+  right: -15px;
+  top: -30px;
+  opacity: 1;
+}
