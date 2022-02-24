@@ -1,0 +1,96 @@
+.knowledge-section {
+  background-color: var(--main-background);
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.knowledge-container {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.knowledge-icons-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 30%;
+  margin: 40px 0;
+}
+.knowledge-slider-container > div > button {
+  z-index: 20;
+  padding: 40px;
+}
+.message-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  margin: 80px 0;
+}
+.knowledge-message {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 2px solid #fff;
+  transform: translateX(50px);
+  width: 300px;
+  height: 100%;
+  padding: 40px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.8s ease-in-out;
+}
+.knowledge-message::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.788);
+  transition: bottom 0.8s ease-in-out;
+}
+.message-container:hover .knowledge-message::after {
+  bottom: -100%;
+}
+
+/* Icons */
+.as-icon {
+  transform: translateY(-80px);
+}
+.git-icon {
+  transform: translateY(10px);
+}
+.unity-icon {
+  transform: translateY(-60px);
+}
+.gh-icon {
+  transform: translateY(20px);
+}
+.vs-icon {
+  transform: translateY(-80px);
+}
+
+/* Contents */
+.knowledge-icons {
+  width: 50px;
+  height: 50px;
+  color: #fff;
+}
+/* Hover effects */
+.knowledge-section:hover .sections-main-header {
+  color: #fff;
+}
+.knowledge-section:hover .header-line {
+  background-color: rgb(192, 192, 192);
+}

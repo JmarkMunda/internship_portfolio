@@ -56,21 +56,22 @@
 }
 /* Text Container */
 .text-profile {
-  color: rgb(54, 54, 54);
+  color: #fff;
   font-size: 17px;
 }
 .info {
-  color: rgb(78, 78, 78);
+  margin-top: 10px;
+  color: rgb(206, 206, 206);
 }
 .course {
-  color: rgb(56, 56, 56);
+  color: rgb(255, 255, 255);
   font-style: italic;
 }
 .line-bottom {
   width: auto;
   height: 1px;
   margin: 15px 0;
-  box-shadow: 0px 1px 2px 0px rgb(129, 129, 129);
+  box-shadow: 0px 1px 2px 0px rgb(190, 190, 190);
 }
 /* Tabs Events */
 .tab {
@@ -99,7 +100,6 @@
   justify-content: center;
   align-items: center;
   max-width: calc(300px + 600px);
-  box-shadow: 2px 2px 5px 2px rgb(63, 63, 63);
 }
 .mp-left-container {
   line-height: 32px;
@@ -114,7 +114,7 @@
   padding: 50px;
   height: 450px;
   width: 600px;
-  background-color: rgb(231, 231, 231);
+  background-color: rgba(255, 255, 255, 0.11);
 }
 .mp-right-container::-webkit-scrollbar {
   width: 3px;
@@ -122,4 +122,22 @@
 }
 .mp-right-container::-webkit-scrollbar-thumb {
   background-color: var(--secondary);
+}
+/* Misc */
+.dot {
+  width: 5px;
+  height: 5px;
+  margin: 2px;
+  align-self: center;
+  color: var(--secondary);
+}
+.pi-header {
+  transform: translateX(-20px);
+}
+/* Hover effects */
+.myprofile-section:hover .sections-main-header {
+  color: #fff;
+}
+.myprofile-section:hover .header-line {
+  background-color: rgb(192, 192, 192);
 }

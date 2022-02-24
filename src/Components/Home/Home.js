@@ -1,8 +1,9 @@
+import { BsCodeSlash } from 'react-icons/bs'
 import React from 'react';
-import CodeIcon  from '../../assets/code.png';
-import MyPic from '../../assets/jm.png';
 import MyPdf from '../../assets/sample.pdf';
 import './Home.css';
+import SideIcons from '../SideIcons';
+import { IoIosArrowUp } from 'react-icons/io';
 
 function Home() {
 
@@ -23,21 +24,21 @@ function Home() {
     <div id='home'>
       <div className='home-section'>
         <div className='left-container'>
-          <img className='code-img' src={CodeIcon} />
-          <p>Hello there!</p>
+          <BsCodeSlash className='code-img'/>
+          <p className='home-subtext'>Hello there!</p>
           <h1 className='home-text animate-text'>I am J'mark</h1>
-          <p>A <span>self taught web developer</span> passionate about creating and designing websites.</p>
-          <p>I am currently looking for an internship required for my Bachelor's Degree in Information Technology.</p>
+          <p className='home-subtext'>A <span>self taught web developer</span> passionate about creating and designing websites.</p>
+          <p className='home-subtext'>I am currently looking for an internship required for my Bachelor's Degree in Information Technology.</p>
           <button className='btn-hireme' >Hire me</button>
           <a href={MyPdf} download='myfile.pdf'>
             <button className='btn-resume'>Get Resume</button>
           </a>
         </div> 
         <div className='right-container'>
-          {/* <img className='my-pic' src={MyPic} /> */}
+          <SideIcons />
         </div>
       </div>
-        <button className='btn-scroll' onClick={scrollToTop}>🡡</button>
+        <button className='btn-scroll' onClick={scrollToTop}><IoIosArrowUp /></button>
     </div>
   
   )

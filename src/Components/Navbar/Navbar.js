@@ -16,16 +16,16 @@ const Navbar = () => {
                 <h1 className='nav-header'>JM</h1>
                 <ul>
                     <li>
-                        <a href='#home' className='inactive'>Home</a>
-                        {/* <NavLink to='/' className={(navData) => navData.isActive ? 'active' : 'inactive' }>Home</NavLink> */}
-                    </li>
-                    <li>
                         <a href='#myprofile' className='inactive'>Profile</a>
                         {/* <NavLink to='profile' className={({ isActive }) => isActive ? 'active' : 'inactive'}>Profile</NavLink> */}
                     </li>
                     <li>
                         <a href='#skills' className='inactive'>Skills</a>
                         {/* <NavLink to='skills' className={({ isActive }) => isActive ? 'active' : 'inactive'} >Skills</NavLink> */}
+                    </li>
+                    <li>
+                        <a href='#knowledge' className='inactive'>Knowledge</a>
+                        {/* <NavLink to='/' className={(navData) => navData.isActive ? 'active' : 'inactive' }>Home</NavLink> */}
                     </li>
                     <li>
                         <a href='#contact' className='inactive'>Contact</a>

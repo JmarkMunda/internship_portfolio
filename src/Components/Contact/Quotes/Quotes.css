@@ -1,0 +1,42 @@
+.words-container {
+  width: auto;
+  height: auto;
+  padding: 40px;
+}
+.words {
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+}
+.sd {
+  font-size: 0.7em;
+}
+.mentor {
+  font-size: 1.5em;
+}
+.opportunity {
+  padding-left: 10px;
+  font: 17px;
+}
+.exp {
+  font-size: 18px;
+  padding-left: 15px;
+}
+.intern {
+  font-size: 3em;
+}
+.training {
+  font-size: 1.8em;
+}
+.inspire {
+  font-size: 1em;
+  padding-left: 10px;
+}
+.gk {
+  font-size: 0.8em;
+}
+.cp {
+  font-size: 1.2em;
+}
+.words:hover {
+  color: #fff;
+}

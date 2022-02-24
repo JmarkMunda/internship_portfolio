@@ -1,0 +1,28 @@
+footer {
+  width: 100%;
+  height: auto;
+  background-color: rgb(66, 66, 66);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+.footer-border {
+  border-right: 1px solid gray;
+  margin-right: 40px;
+  padding-right: 40px;
+}
+.footer-text {
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer-icons {
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  margin: 8px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.footer-icons:hover {
+  color: var(--secondary);
+}

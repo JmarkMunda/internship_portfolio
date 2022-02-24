@@ -1,18 +1,19 @@
 .home-section {
   display: flex;
   background-color: var(--main-background);
-  height: 100vh;
+  height: 80vh;
   width: 100%;
 }
 .code-img {
   margin: 20px 20px 40px 20px;
   width: 50px;
   height: 50px;
+  color: var(--secondary);
 }
 .home-text {
   color: var(--primary);
   margin: 5px 20px 20px 20px;
-  font-size: 60px;
+  font-size: 80px;
   border-right: 2px solid rgba(255, 255, 255, 0.75);
   overflow: hidden;
   width: 5.6em;
@@ -41,12 +42,15 @@
 }
 p {
   color: var(--primary);
-  margin: 5px 0px 0px 20px;
   font-size: 14px;
+}
+.home-subtext {
+  margin: 5px 0px 0px 20px;
 }
 span {
   color: var(--secondary);
 }
+/* Buttons */
 .btn-hireme {
   position: relative;
   margin: 60px 20px;
@@ -87,28 +91,22 @@ span {
 }
 .btn-resume:hover {
   border: 1px solid var(--secondary);
+  background-color: rgba(163, 163, 163, 0.377);
 }
 .left-container {
-  margin-top: 30px;
-  padding: 60px 40px 0px 80px;
+  padding: 60px 40px 0px 100px;
 }
 .right-container {
-  margin-top: 30px;
-  position: relative;
-  width: 30vw;
-  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 90vh;
 }
-/* .right-container .my-pic {
-  margin: 30px;
-  mix-blend-mode: lighten;
-  width: 500px;
-  height: 500px;
-  position: absolute;
-  top: 10px;
-  left: -60px;
-} */
+
+/* Scroll events */
 .btn-scroll {
-  background-color: rgba(211, 211, 211, 0.8);
+  background-image: radial-gradient(rgb(0, 255, 255), rgb(199, 199, 199));
   border: none;
   position: fixed;
   right: 30px;
