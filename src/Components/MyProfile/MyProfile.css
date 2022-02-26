@@ -114,7 +114,7 @@
   padding: 50px;
   height: 450px;
   width: 600px;
-  background-color: rgba(255, 255, 255, 0.11);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .mp-right-container::-webkit-scrollbar {
   width: 3px;
@@ -140,4 +140,33 @@
 }
 .myprofile-section:hover .header-line {
   background-color: rgb(192, 192, 192);
+}
+
+@media only screen and (max-width: 600px) {
+  .myprofile-section {
+    width: 100%;
+    height: 100%;
+  }
+  .about-me {
+    flex-direction: column;
+    height: auto;
+  }
+  .text-about-me {
+    padding: 40px;
+    border: 1px solid var(--primary);
+    width: 100%;
+    color: #fff;
+  }
+  .personal-details {
+    flex-direction: column;
+  }
+  .mp-left-container {
+    background-color: rgba(150, 150, 150, 0.5);
+    height: 350px;
+    padding: 10px 0;
+  }
+  .mp-left-container,
+  .mp-right-container {
+    width: 400px;
+  }
 }

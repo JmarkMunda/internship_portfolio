@@ -31,8 +31,6 @@ function ContactCard({ text }) {
       }, 10000);
   }
 
-  
-
   return (
     <div className='contact-card-container'>
       <form ref={form} onSubmit={sendMessage}>

@@ -192,3 +192,14 @@
   top: -30px;
   opacity: 1;
 }
+
+@media only screen and (max-width: 600px) {
+  .skills-section {
+    height: auto;
+  }
+  .skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

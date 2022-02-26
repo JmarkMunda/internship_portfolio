@@ -70,3 +70,14 @@ input:active {
 ::placeholder {
   color: #fff;
 }
+
+@media only screen and (max-width: 600px) {
+  .contact-card-container {
+    width: 100%;
+    height: auto;
+  }
+  input,
+  textarea {
+    width: 100%;
+  }
+}

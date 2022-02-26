@@ -1,6 +1,6 @@
 import { BsCodeSlash } from 'react-icons/bs'
 import React from 'react';
-import MyPdf from '../../assets/sample.pdf';
+import MyPdf from '../../assets/Internship_Resume.pdf';
 import './Home.css';
 import SideIcons from '../SideIcons';
 import { IoIosArrowUp } from 'react-icons/io';
