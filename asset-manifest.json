@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/myportfolio/static/css/main.4da55992.css",
+    "main.js": "/myportfolio/static/js/main.d2ab1d60.js",
+    "static/media/jm.png": "/myportfolio/static/media/jm.ae9843941b6d643c9be4.png",
+    "static/media/Internship_Resume.pdf": "/myportfolio/static/media/Internship_Resume.723f195ebf3d67c57245.pdf",
+    "index.html": "/myportfolio/index.html",
+    "main.4da55992.css.map": "/myportfolio/static/css/main.4da55992.css.map",
+    "main.d2ab1d60.js.map": "/myportfolio/static/js/main.d2ab1d60.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4da55992.css",
+    "static/js/main.d2ab1d60.js"
+  ]
+}
