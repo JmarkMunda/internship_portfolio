@@ -16,7 +16,7 @@ function SideIcons() {
             <a href='https://www.instagram.com/jmbaturiano/' target="_blank">
                 <FiInstagram className='bottom-icons'/>
             </a>
-            <a href='https://github.com/JmDumb' target="_blank">
+            <a href='https://github.com/JmarkMunda' target="_blank">
                 <FiGithub className='bottom-icons'/>
             </a> 
             <div className='bottom-line-right' />
