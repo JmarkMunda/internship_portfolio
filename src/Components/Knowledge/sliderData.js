@@ -22,6 +22,6 @@ export const sliderData = [
     {
         id: 5,
         title: "Github",
-        message: ' " It allows me to track, modify and save my changes without worrying if my source code gets erased in the local drive as well as making collaboration easier. " '  
+        message: ' " It allows me to monitor, modify and save my changes without worrying if my source code gets erased in the local drive. " '  
     }
 ]

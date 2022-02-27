@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { BsFillCircleFill } from 'react-icons/bs';
-import './PersonalDetails.css';
 
 const PersonalDetails = () => {
     const [currentTab, setCurrentTab] = useState(1);
+    console.log(currentTab);
 
     const tabHandler = (index) =>{
         setCurrentTab(index);
@@ -18,7 +18,7 @@ const PersonalDetails = () => {
           </div>
           <div className='mp-right-container'>
             {/* Personal Information */}
-              <div className={'personal-information ' + (currentTab != 1 ? 'tab-content-inactive' : '')}>
+            <div className={(currentTab != 1 ? 'tab-content-inactive' : '')}>
               <p className='text-profile pi-header'><BsFillCircleFill className='dot'/> Name:</p>
               <p className='text-profile info'>Jay Mark Baturiano Munda</p>
               <div className='line-bottom'/>
@@ -43,7 +43,7 @@ const PersonalDetails = () => {
             </div>
 
             {/* Educational Background */}
-            <div className={'educational-background ' + (currentTab != 2 ? 'tab-content-inactive' : '')}>
+            <div className={(currentTab != 2 ? 'tab-content-inactive' : '')}>
               <p className='text-profile pi-header'><BsFillCircleFill className='dot'/> College:</p>
               <p className='text-profile info course'>"Bachelor of Science in Information Technology"</p>
               <p className='text-profile info'>STI College Balagtas (2018-present)</p>
@@ -61,39 +61,39 @@ const PersonalDetails = () => {
             </div>
 
             {/* Honors and Certificates */}
-            <div className={'honors-certs ' + (currentTab != 3 ? 'tab-content-inactive' : '')}>
-                <p className='text-profile pi-header'><BsFillCircleFill className='dot'/> 1.36 GWA (Dean's List)</p>
-                <p className='text-profile info course'>3rd year 2nd sem</p>
-                <p className='text-profile info'>STI College Balagtas</p>
-                <div className='line-bottom'/>
-                <p className='text-profile pi-header'><BsFillCircleFill className='dot'/> 1.44 GWA (Dean's List)</p>
-                <p className='text-profile info course'>3rd year 1st sem</p>
-                <p className='text-profile info'>STI College Balagtas</p>
-                <div className='line-bottom'/>
-                <p className='text-profile pi-header'><BsFillCircleFill className='dot'/> SAP Business One (Certificate)</p>
-                <p className='text-profile info'>STI College Balagtas</p>
-                <div className='line-bottom'/>
-                <p className='text-profile pi-header'><BsFillCircleFill className='dot'/> Advance SAP (Certificate)</p>
-                <p className='text-profile info'>STI College Balagtas</p>
-                <div className='line-bottom'/>
-                <p className='text-profile pi-header'><BsFillCircleFill className='dot'/> Data Encoder (OJT Certificate)</p>
-                <p className='text-profile info'>RMES Globe Telecom</p>
-                <div className='line-bottom'/>
+            <div className={(currentTab != 3 ? 'tab-content-inactive' : '')}>
+              <p className='text-profile pi-header'><BsFillCircleFill className='dot'/> 1.36 GWA (Dean's List)</p>
+              <p className='text-profile info course'>3rd year 2nd sem</p>
+              <p className='text-profile info'>STI College Balagtas</p>
+              <div className='line-bottom'/>
+              <p className='text-profile pi-header'><BsFillCircleFill className='dot'/> 1.44 GWA (Dean's List)</p>
+              <p className='text-profile info course'>3rd year 1st sem</p>
+              <p className='text-profile info'>STI College Balagtas</p>
+              <div className='line-bottom'/>
+              <p className='text-profile pi-header'><BsFillCircleFill className='dot'/> SAP Business One (Certificate)</p>
+              <p className='text-profile info'>STI College Balagtas</p>
+              <div className='line-bottom'/>
+              <p className='text-profile pi-header'><BsFillCircleFill className='dot'/> Advance SAP (Certificate)</p>
+              <p className='text-profile info'>STI College Balagtas</p>
+              <div className='line-bottom'/>
+              <p className='text-profile pi-header'><BsFillCircleFill className='dot'/> Data Encoder (OJT Certificate)</p>
+              <p className='text-profile info'>RMES Globe Telecom</p>
+              <div className='line-bottom'/>
             </div>
             
             {/* Class Schedule */}
-            <div className={'schedule ' + (currentTab != 4 ? 'tab-content-inactive' : '')}>
-            <p className='text-profile'>Weekly Schedule</p>
-            <div className='calendar'>
-                <p className='text-profile info days'>Monday</p>
-                <p className='text-profile info days'>Wednesday</p>
-                <p className='text-profile info days'>Friday</p>
-                <p className='text-profile info days'>Saturday</p>
-                <p className='text-profile info time'>1am to 3pm</p>
-                <p className='text-profile info time'>1am to 3pm</p>
-                <p className='text-profile info time'>1am to 3pm</p>
-                <p className='text-profile info time'>1am to 3pm</p>
-            </div>
+            <div className={currentTab != 4 ? 'tab-content-inactive' : ''}>
+              <p className='text-profile'>Weekly Schedule</p>
+              <div className='calendar'>
+                  <p className='text-profile info days'>Monday</p>
+                  <p className='text-profile info days'>Wednesday</p>
+                  <p className='text-profile info days'>Friday</p>
+                  <p className='text-profile info days'>Saturday</p>
+                  <p className='text-profile info time'>8:30am to 10am</p>
+                  <p className='text-profile info time'>8:30am to 10am</p>
+                  <p className='text-profile info time'>2pm to 3pm</p>
+                  <p className='text-profile info time'>1pm to 5pm</p>
+              </div>
             </div>
           </div>
       </div>

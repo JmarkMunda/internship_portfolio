@@ -18,7 +18,7 @@ function Skills() {
           <h4 className='skills-header'>HTML</h4>
           <div className='skills-level' >
             <div className='html-fill-level' >
-              <p className='html-skill-percentage'>95%</p>
+              <p className='html-skill-percentage'>70%</p>
               <RiArrowUpSFill className='html-skill-pointer'/>
             </div>
           </div>
@@ -28,7 +28,7 @@ function Skills() {
           <h4 className='skills-header'>CSS</h4>
           <div className='skills-level' >
             <div className='css-fill-level' >
-              <p className='css-skill-percentage'>80%</p>
+              <p className='css-skill-percentage'>60%</p>
               <RiArrowUpSFill className='css-skill-pointer'/>
             </div>
           </div>
@@ -38,7 +38,7 @@ function Skills() {
           <h4 className='skills-header'>Javascript</h4>
           <div className='skills-level' >
             <div className='js-fill-level' >
-              <p className='js-skill-percentage'>40%</p>
+              <p className='js-skill-percentage'>20%</p>
               <RiArrowUpSFill className='js-skill-pointer'/>
             </div>
           </div>
@@ -48,7 +48,7 @@ function Skills() {
           <h4 className='skills-header'>React Js</h4>
           <div className='skills-level' >
             <div className='react-fill-level' >
-              <p className='react-skill-percentage'>40%</p>
+              <p className='react-skill-percentage'>20%</p>
               <RiArrowUpSFill className='react-skill-pointer'/>
             </div>
           </div>

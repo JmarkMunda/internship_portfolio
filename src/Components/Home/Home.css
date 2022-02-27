@@ -140,7 +140,7 @@ span {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .home-section {
     flex-direction: column;
     margin: 0;
@@ -150,10 +150,23 @@ span {
     font-size: 60px;
   }
   .left-container {
-    padding: 20px;
+    padding: 80px 20px 20px;
   }
   .right-container {
     display: none;
+  }
+  .btn-hireme,
+  .btn-scroll {
+    z-index: 0;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .home-text {
+    font-size: 70px;
+  }
+  .left-container {
+    padding: 100px 40px 0 40px;
   }
   .btn-hireme,
   .btn-scroll {
