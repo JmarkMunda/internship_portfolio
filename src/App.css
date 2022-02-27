@@ -5,16 +5,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 h1 {
   font-size: 2em;
 }
 .main {
   font-family: "Inconsolata", monospace;
-  width: 100%;
-  height: auto;
+  overflow-x: hidden;
 }
 /* Main Header */
 .sections-main-header {
+  text-align: center;
   user-select: none;
   color: rgb(138, 138, 138);
   transition: all 0.2s ease;

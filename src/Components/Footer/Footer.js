@@ -20,7 +20,7 @@ function Footer() {
         <a href='https://www.instagram.com/jmbaturiano/' target="_blank">
             <FiInstagram className='footer-icons'/>
         </a>
-        <a href='https://github.com/JmDumb' target="_blank">
+        <a href='https://github.com/JmarkMunda' target="_blank">
             <FiGithub className='footer-icons'/>
         </a> 
         <p className='footer-text'>Created by: Jay Mark B. Munda</p>

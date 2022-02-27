@@ -83,7 +83,7 @@
   cursor: pointer;
 }
 .tab-inactive:hover {
-  color: rgba(255, 255, 255, 0.829);
+  color: rgba(255, 255, 255, 0.8);
 }
 .tab-active {
   background-color: var(--primary);
@@ -109,13 +109,20 @@
   background-color: rgba(150, 150, 150, 0.158);
 }
 .mp-right-container {
+  align-content: center;
   overflow-y: auto;
   line-height: 32px;
   padding: 50px;
   height: 450px;
   width: 600px;
-  background-color: rgba(255, 255, 255, 0.11);
+  background-color: rgba(255, 255, 255, 0.1);
 }
+/* .mp-right-container > div:nth-child(4) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+} */
 .mp-right-container::-webkit-scrollbar {
   width: 3px;
   background-color: var(--primary);
@@ -140,4 +147,61 @@
 }
 .myprofile-section:hover .header-line {
   background-color: rgb(192, 192, 192);
+}
+
+/* Schedule Tab */
+.mp-right-container > div:nth-child(4) {
+  padding-top: 60px;
+  width: 100%;
+  height: 100%;
+}
+.mp-right-container > div:nth-child(4) > div {
+  width: 100%;
+  height: auto;
+  background-color: rgb(68, 68, 68);
+  display: grid;
+  justify-content: space-evenly;
+  align-items: center;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: auto auto;
+}
+.days {
+  color: var(--secondary);
+  font-size: 14px;
+  text-align: center;
+}
+.time {
+  text-align: center;
+  font-size: 14px;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+@media only screen and (max-width: 700px) {
+  .myprofile-section {
+    width: 100%;
+    height: 100%;
+  }
+  .about-me {
+    flex-direction: column;
+    height: auto;
+  }
+  .text-about-me {
+    padding: 40px;
+    border: 1px solid var(--primary);
+    width: 100%;
+    color: #fff;
+  }
+  .personal-details {
+    flex-direction: column;
+  }
+  .mp-left-container {
+    background-color: rgba(150, 150, 150, 0.5);
+    height: 350px;
+    padding: 10px 0;
+  }
+  .mp-left-container,
+  .mp-right-container {
+    width: 400px;
+  }
 }

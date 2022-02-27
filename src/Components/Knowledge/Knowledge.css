@@ -94,3 +94,16 @@
 .knowledge-section:hover .header-line {
   background-color: rgb(192, 192, 192);
 }
+
+@media only screen and (max-width: 700px) {
+  .message-container {
+    flex-direction: column;
+    height: auto;
+    padding: 0 40px;
+  }
+  .knowledge-message {
+    border: 2px solid #fff;
+    transform: translateX(0);
+    height: auto;
+  }
+}
