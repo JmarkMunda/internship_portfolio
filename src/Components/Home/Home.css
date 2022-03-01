@@ -161,15 +161,10 @@ span {
   }
 }
 
-@media only screen and (max-width: 900px) {
-  .home-text {
-    font-size: 70px;
-  }
-  .left-container {
-    padding: 100px 40px 0 40px;
-  }
-  .btn-hireme,
-  .btn-scroll {
-    z-index: 0;
+@media only screen and (min-width: 1500px) {
+  .home-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
   }
 }
