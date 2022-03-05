@@ -29,7 +29,9 @@ function Home() {
           <h1 className='home-text animate-text'>I am J'mark</h1>
           <p className='home-subtext'>A <span>self taught web developer</span> passionate about creating and designing websites.</p>
           <p className='home-subtext'>I am currently looking for an internship required for my Bachelor's Degree in Information Technology.</p>
-          <button className='btn-hireme' >Hire me</button>
+          <a href='#contact'>
+            <button className='btn-hireme' >Hire me</button>
+          </a>       
           <a href={MyPdf} download='myfile.pdf'>
             <button className='btn-resume'>Get Resume</button>
           </a>
